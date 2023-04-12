@@ -78,11 +78,14 @@ header{
 }
 .home-text{
     flex: 1 1 17rem;
+    padding-left: 50px;
 }
 .home-img{
     flex: 1 1 17rem;
 }
 .home-img img{
+    width: 700px;
+    padding-left: 100px;
     animation: animate 3s linear infinite;
 }
 @keyframes animate{
@@ -142,14 +145,14 @@ header{
     font-size: 2rem;
     color: var(--main-color);
 }
-.shop-container{
+.acara-container{
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
     margin-top: 5rem;
 
 }
-.shop-container .box{
+.acara-container .box{
     flex: 1 1 10rem;
     background: var(--main-color);
     padding: 20px;
@@ -160,31 +163,35 @@ header{
     margin-top:3rem;
     border-radius: 0.5rem;
 }
-.shop-container .box .box-img{
+.acara-container .box .box-img{
     width: 150px;
     height: 150px;
     margin-top: -100px;
 }
-.shop-container .box .box-img img{
+.acara-container .box .box-img img{
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: cover;
     object-position: center;
+    border-radius: 20px;
 }
 .stars{
     margin: 1rem 0 0.1rem;
 
 }
-.shop-container .box .stars .bx{
+.acara-container .box .stars .bx{
     color: #ebdbc8;
 
 }
-.shop-container .box span{
+.acara-container .box span{
     color: #ebdbc7;
     font-size: 1.2rem;
     font-weight: 500;
     margin: 0.2rem 0 0.5rem;
 
+}
+.box{
+    margin: 50px;
 }
 .box .btn{
     border: 2px solid #ebdbc8;
@@ -199,23 +206,32 @@ header{
     flex-wrap: wrap;
     gap: 1.5rem;
     margin-top: 2rem;
+    padding: 50px;
 
 }
-.delivery-img,
+.Edukasi-img img,
+.app-img img{
+    width: 500px;
+}
+.Edukasi-img,
 .app-img{
     flex: 1 1 21rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
-.delivery-text,
+.Edukasi-text,
 .app-text{
     flex: 1 1 21rem;
+    
 }
-.delivery-text h2,
+.Edukasi-text h2,
 .app-text h2{
     font-size: 1.2rem;
     color: var(--second-color);
 }
-.delivery-text p,
+.Edukasi-text p,
 .app-text p {
     margin: 0.5rem 0 1rem;
     text-align: justify;
@@ -224,14 +240,18 @@ header{
     display: flex;
     flex-wrap: wrap;
     background:#ebdbc8;
-    gap: 1.5rem;
-
+    
 }
 .about-img{
-    flex: 1 1 17rem;
+    padding: 50px;
 
 }
+.about-img img{
+    border-radius: 20px;
+    width: 500px;
+}
 .about-text{
+    padding: 50px;
     flex: 1 1 17rem;
 
 }
@@ -249,6 +269,7 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 20px;
 
 }
 .social a{
@@ -309,9 +330,8 @@ header{
         display: initial;
     }
     header .navbar{
-        background-color: red;
         position: absolute;
-        top: 100%;
+        top: -500px;
         left: 0;
         right: 0;
         display: flex;
@@ -343,7 +363,7 @@ header{
         .home-text{
             padding-top: inherit;
         }
-        .shop-container .box{
+        .acara-container .box{
             margin-top: 6rem;
         }
         .heading h1{
